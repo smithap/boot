@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="boot" default="package" xmlns:ivy="antlib:org.apache.ivy.ant">
+	<property file="properties/${user.name}.properties" />
+	<property file="properties/build.properties" />
+	<property file="${user.home}/default.properties" />
+	
+	<target name="clean">
+		<delete dir="build"/>
+	</target>
+	
+	<target name="retrieve" unless="no.retrieve" depends="clean">
+		<ivy:retrieve pattern="build/lib/main/[artifact]-[revision].[ext]" conf="main" type="jar,bundle" />
+	</target>
+
+	<target name="resolve" description="ivy" depends="retrieve">
+		<ivy:cachepath pathid="main.classpath" conf="main" />
+	</target>
+	
+	<target name="compile" depends="resolve">
+		<mkdir dir="build/classes"/>
+		<javac destdir="build/classes" classpathref="main.classpath" srcdir="src/main/java" includeantruntime="false"/>
+		<copy todir="build/classes" file="src/main/java/log4j.xml"/>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<jar destfile="build/boot.jar" basedir="build/classes"/>
+	</target>
+	
+	<target name="package" depends="jar">
+		<java classname="adrian.Packager">
+			<classpath>
+				<path refid="main.classpath"/>
+				<pathelement location="build/classes"/>
+			</classpath>
+			<arg value="build/boot.jar"/>
+			<arg value="adrian.SampleController"/>
+			<arg value="build/lib/main"/>
+		</java>
+	</target>
+</project>

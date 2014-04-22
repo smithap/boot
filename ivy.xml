@@ -1,0 +1,16 @@
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd" xmlns:m="http://ant.apache.org/ivy/maven"
+	xmlns:e="http://ant.apache.org/ivy/extra">
+	
+	<info organisation="com.bt.wifi" module="boot" />
+	<configurations defaultconfmapping="*->default">
+		<conf name="main" />
+	</configurations>
+	
+	<dependencies>
+		<dependency org="org.springframework.boot" name="spring-boot" rev="0.5.0.M6" conf="main"/>
+		<dependency org="org.springframework.boot" name="spring-boot-starter-web" rev="0.5.0.M6" conf="main"/>
+		<dependency org="org.springframework.boot" name="spring-boot-loader-tools" rev="0.5.0.M6" conf="main"/>
+		<dependency org="commons-codec" name="commons-codec" rev="1.5" conf="main"/>
+	</dependencies>
+</ivy-module>
+		

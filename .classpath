@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-core-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-webmvc-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-beans-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-context-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-autoconfigure-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-web-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-aop-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-expression-4.0.0.RC1.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-starter-tomcat-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-starter-web-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-starter-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-starter-logging-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/tomcat-embed-core-7.0.42.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/tomcat-embed-logging-juli-7.0.42.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/spring-boot-loader-tools-0.5.0.M6.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/sesm-commons.jar"/>
+	<classpathentry kind="lib" path="build/lib/main/cns-bfj220-2.1.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
